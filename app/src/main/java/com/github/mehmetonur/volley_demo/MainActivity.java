@@ -24,7 +24,6 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
   private String TAG = MainActivity.class.getSimpleName();
-  private Button btnJsonObj, btnJsonArray;
   private TextView msgResponse;
   private ProgressDialog pDialog;
 
@@ -35,8 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    btnJsonObj = (Button) findViewById(R.id.btnJsonObj);
-    btnJsonArray = (Button) findViewById(R.id.btnJsonArray);
+    Button btnJsonObj = (Button) findViewById(R.id.btnJsonObj);
+    Button btnJsonArray = (Button) findViewById(R.id.btnJsonArray);
     msgResponse = (TextView) findViewById(R.id.msgResponse);
 
     pDialog = new ProgressDialog(this);
